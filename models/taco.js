@@ -4,8 +4,8 @@ const Schema = mongoose.Schema
 
 const tacoSchema = new Schema({
   name: String,
-  tasty: boolean,
-  owner: {type: Schema.Types.ObjectId, 'ref': "Profile"}
+  tasty: Boolean,
+  owner: {type: Schema.Types.ObjectId, ref: "Profile"}
 })
 
 const Taco = mongoose.model('Taco', tacoSchema)

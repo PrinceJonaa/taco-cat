@@ -1,10 +1,11 @@
 import { Router } from 'express'
+import * as tacosCtrl from "../controllers/tacos.js"
 
-const router = router()
+const router = Router();
 
 // GET - localhost:3000/tacos
 
-rouer.get('/', )
+router.get('/', tacosCtrl.index)
 
 export {
   router
